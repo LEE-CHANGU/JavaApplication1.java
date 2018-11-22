@@ -5,8 +5,10 @@ JavaApplication1.java는 경북대학교 학생들이 본인이 듣고자 하는
 
 
 ## 기본 작동 원리
+프로그램을 실행하면 
+![image](https://user-images.githubusercontent.com/44903476/48906692-a7af4c80-eea8-11e8-97f1-3856ecbcaf43.png)
+이와 같이 화면이 구성되며 
 
-- 프로그램을 실행하면 
 
 ## 코드 설명
 
