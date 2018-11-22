@@ -37,8 +37,12 @@ public class JavaApplication1 {
 		}
 		return bflag;
 	}
-  ```
- -> 기본적인 구조는 로그인 시 학번과 비밀번호가 맞는지 확인
+  ````
+student_no.txt와 passwd.txt파일에 저장된 정보들을 배열로 변환한 data를 비교하였다. while문을 이용하여 일치하는 경우 true값을 출력하고 그렇지 않으면 i(틀린횟수)를 1씩 증가시키도록 하였다.
+
+> While문
+
+
 
 
  
