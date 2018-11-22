@@ -47,8 +47,55 @@ while(조건식) {반복문장}
 ````
 기본 형태는 이와 같다. 조건식이 true가 되면 반복문장이 계속 반복한다.
 
+또한 student_no.txt와 passwd.txt파일을 읽어와서 그에 저장된 data를 배열로 변환하여 사용하였는데 배열로 변환하는 코드는 다음과 같다. 
+````
+	static String[] readinfo(String fname) {
+		FileReader fr = null;
+		BufferedReader br = null;
+		
+		int no = readNoOfInfo(fname);
+		
+		int i = 0;
+		String[] str = new String[no];
+		try {
+			fr = new FileReader(fname);
+			br = new BufferedReader(fr);
+			
+			String stemp = br.readLine();
+			while (stemp != null) {
+				str[i++] = stemp;
+				stemp = br.readLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		return str;
+	}
+````
 
+- 메인메뉴에서 선택하고자 하는 메뉴의 번호를 입력받는 코드는 다음과 같다.
 
+````
+	static int readdata(String str) {
+		System.out.print(str);
+		Scanner scan = new Scanner(System.in);
+		String stemp = scan.nextLine();
+		int ntemp = Integer.parseInt(stemp);
+		
+		return ntemp;
+		
+	}//선택하고자 하는 항목을 받음
+````
+scanner 클래스를 이용하여 선택하고자 하는 메뉴의 번호를 입력받아서 ntemp에 저장하였다.
+
+> scanner 클래스
+scanner 클래스는 java에서 입력을 받는 경우 흔하게 쓰인다.
+````
+Scanner 클래스이름 = new Scanner(System.in);
+변수의형태 변수 = 클래스이름.nextLine();
+````
+형태로 이용한다.
 
  
 
