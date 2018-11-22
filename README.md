@@ -38,9 +38,14 @@ public class JavaApplication1 {
 		return bflag;
 	}
   ````
-student_no.txt와 passwd.txt파일에 저장된 정보들을 배열로 변환한 data를 비교하였다. while문을 이용하여 일치하는 경우 true값을 출력하고 그렇지 않으면 i(틀린횟수)를 1씩 증가시키도록 하였다.
+student_no.txt와 passwd.txt파일에 저장된 정보들과 입력받은 data를 비교하였다. while문을 이용하여 일치하는 경우 true값을 출력하며 종료하고 그렇지 않으면 i(틀린횟수)를 1씩 증가시키고 반복하도록 하였다.
 
 > While문
+while문은 조건이 만족되면 반복을 계속하는 구조이다. 미리 반복 횟수를 알 수 없고 조건에 따라서 반복하는 경우에 사용한다.
+````
+while(조건식) {반복문장}
+````
+기본 형태는 이와 같다. 조건식이 true가 되면 반복문장이 계속 반복한다.
 
 
 
