@@ -151,7 +151,7 @@ switch(변수){
 이러한 꼴로 사용되며 변수와 일치하는 임의의수의 실행문장을 실행한다.
 
 - 기초 자료형
-> byte, short, int, long : 부호있는 정수  float, double : 실수  char : 문자(유니코드)  boolean : true 또는 false
+> byte, short, int, long : 부호있는 정수/  float, double : 실수/  char : 문자(유니코드)/  boolean : true 또는 false
 
 ## student_no.txt
 
