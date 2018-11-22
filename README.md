@@ -97,8 +97,57 @@ Scanner 클래스이름 = new Scanner(System.in);
 ````
 형태로 이용한다.
 
- 
+- if와 Elseif문을 이용하여 해당하는 과목의 교수님 목록을 출력 하도록 하였다.
+````
+if (no == 1) {
+			stemp += "\n*\t1. 이슬비\t\t\t*";
+			stemp += "\n*\t2. 오지랍\t\t\t*";
+			stemp += "\n*\t3. 강하다\t\t\t*";
+		} else if (no == 2) {
+			stemp += "\n*\t1. 김논리\t\t\t*";
+			stemp += "\n*\t2. 박회로\t\t\t*";
+			stemp += "\n*\t3. 김치국\t\t\t*";
+````
+> if, else if문
+if, else if문은 다음과 같은 형식을 가진다
+````
+if(조건식) 문장1;
+else 문장2;
+````
+여기서 조건식이 true면 문장1을 수행하고 조건식이 false이면 문장2를 수행하게 된다.
 
+````
+switch (ntemp2) {
+					case 1:
+						subject = "회로이론 1";
+						break;
+					case 2:
+						subject = "논리회로";
+						break;
+					case 3:
+						subject = "전자장1";
+						break;
+					case 4:
+						subject = "자바프로그래밍";
+						break;
+					case 5:
+						subject = "전자공학실험1";
+						break;
+					}
+					break;
+````
+여기에서는 switch-case 문을 이용하여 입력받은 값에 해당하는 과목으로 넘어갈 수 있도록 하였다. ntemp2의 값에 따라 case를 1에서 5까지 나누었고 해당하는 값에 따라 알맞은 과목명을 subject에 입력하도록 하였다.
+
+> switch-case문
+switch문은 여러 개의 가능한 실행 경로 중에서 하나를 선택하는데 사용된다. switch문은 정수형에 대해서만 동작한다.
+
+````
+switch(변수){
+	case 임의의수1 : 실행문장; break;
+	case 임의의수2 : 실행문장; break;
+	}
+````
+이러한 꼴로 사용되며 변수와 일치하는 임의의수의 실행문장을 실행한다.
 
 ## student_no.txt
 
